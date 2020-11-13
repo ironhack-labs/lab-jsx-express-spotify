@@ -126,7 +126,7 @@ All that is left to do is to add your keys in the `.env` file
 So go ahead and create a `.env` file in the root folder of the project and paste the following lines there, replacing the text with your credentials.
 
 ```
-CLIENT_ID=your clientIdGoesHere
+CLIENT_ID=yourClientIdGoesHere
 CLIENT_SECRET=yourClientSecretGoesHere
 ```
 
