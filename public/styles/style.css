@@ -1,0 +1,254 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset  */
+
+main {
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+}
+figcaption {
+  font-size: 1.6rem;
+  color: #302e2e;
+}
+h2 {
+  font-size: 1.7rem;
+  color: rgb(172, 164, 164);
+  font-weight: bold;
+}
+
+#header-image {
+  background-image: url("./../images/spotify-background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  background: rgba(255, 255, 255, 0.418);
+  padding: 50px 0px 40px 0px;
+}
+input {
+  padding: 5px;
+  width: 300px;
+  margin-bottom: 10px;
+  border: none;
+}
+::placeholder {
+  color: rgb(63, 60, 60);
+  font-size: 0.9rem;
+}
+
+#form-container > form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.button-artist {
+  background-color: rgba(226, 51, 51, 0.74);
+  width: 150px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+
+/* artistsearch page  */
+#artists,
+#albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.individual-artist {
+  width: 370px;
+  height: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #4d4d4d;
+}
+.individual-artist > img {
+  width: 100%;
+  height: auto;
+}
+.artist-photo {
+  width: 300px;
+  height: auto;
+}
+
+.artist-name,
+.track-name {
+  color: #fff;
+  margin-top: 10px;
+  padding: 5px;
+}
+.view-albums-link,
+.view-tracks-link {
+  background-color: #f08284;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 0px;
+  border: 1px solid black;
+}
+
+/* track page */
+#track-page {
+  background-color: #f6f6f6;
+  height: 800px;
+}
+#track-titles {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 180px 0px 20px;
+  align-items: center;
+  background-color: #4d4d4d;
+  height: 100px;
+  width: auto;
+}
+.track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #fff;
+}
