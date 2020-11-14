@@ -1,27 +1,34 @@
 const React = require('react');
+const Layout = require('./Layout');
 
 
 function Tracks(props) {
-    console.log(props.data[0].preview_url);
+    console.log(props.data[0]);
     return (
+        <Layout>
+            <div>
+                {props.data.map((prop, i) => {
+                    return (
+                        <div>
+                            <h2>Title</h2>
+                            <h2>Listen</h2>
+                            {prop.preview_url.length === 0 ? null :
+                                <figure key={i}>
+                                    <figcaption>Listen to the {prop.name}:</figcaption>
 
-        <div>
-            {props.data.map((prop, i) => {
-                return (
-                    <figure key={i}>
-                        <figcaption>Listen to the T-Rex:</figcaption>
-                        <audio
-                            controls
-                            src={prop.data.preview_url}>
-                        </audio>
-                    </figure>
-                )
+                                    <audio
+                                        controls
 
-            }
-            )}
+                                        src={`${prop.preview_url}`}>
+                                    </audio>
+                                </figure>}
 
-
-        </div>
+                        </div>
+                    )
+                }
+                )}
+            </div>
+        </Layout>
     )
 }
 

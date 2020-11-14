@@ -1,23 +1,27 @@
 const React = require('react');
+const Layout = require('./Layout');
+
 
 function ArtistSearchResult(props) {
-    console.log(props.data);
 
     return (
-        <div>
-            {props.data.map((prop, i) => {
-                return (<div key={i}>
-                    <h2>{prop.name}</h2>
-                    {prop.images.length === 0 ? null :
-                        <img src={`${prop.images[1].url}`} />}
+        <Layout>
+            <main>
+                <div id="artists">
+                    {props.data.map((prop, i) => {
+                        return (
+                            <div class="individual-artist" key={i}>
+                                {prop.images.length === 0 ? null :
+                                    <img class="artist-photo" src={`${prop.images[1].url}`} />}
+                                <h2 class="artist-name">{prop.name}</h2>
 
-                    <a href={`/albums/${prop.id}`}>View Albums</a>
-                </div>)
-
-            })}
-
-
-        </div>
+                                <a class="view-albums-link" href={`/albums/${prop.id}`}>View Albums</a>
+                            </div>
+                        )
+                    })}
+                </div>
+            </main>
+        </Layout>
     )
 }
 

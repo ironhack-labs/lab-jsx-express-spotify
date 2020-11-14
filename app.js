@@ -80,7 +80,7 @@ app.get('/albums/:artistId/tracks', (req, res, next) => {
   spotifyApi
     .getAlbumTracks(id, { limit: 5, offset: 1 })
     .then(function (data) {
-      // console.log(data.body);
+      console.log(data.body);
       const tracks = { data: data.body.items }
 
       res.render('Tracks', tracks)
