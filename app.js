@@ -39,18 +39,19 @@ app.get('/', (req, res, next) => {
   res.render('Home');
 });
 app.get('/artist-search', (req, res, next) => {
-  console.log(req.query);
+  //console.log(req.query);
   spotifyApi
 .searchArtists(req.query.artistSearch)
   .then((data) => {
-    const props = data.body.artists.items
-    console.log(props)
-    res.render('ArtistSearchResult', props);
+    //const props = data.body.artists.items
+    //console.log(props)
+    res.render('ArtistSearchResult', data.body.artists);
   })
   .catch((err) =>
     console.log("The error while searching artists occurred: ", err)
   );
 })
+
 app.listen(PORT, () =>
   console.log(`My Spotify project running on port ${PORT} 🎧 🥁 🎸 🔊`)
 );
