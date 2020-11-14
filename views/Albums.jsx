@@ -5,20 +5,29 @@ const Layout = require("./Layout");
 function Albums(props) {
   return (
     <Layout>
-      {props.items.map((element) => (
-        <div className="artist-result ">
-          <h3>{element.name}</h3>
-          <img src={element.images[2] ? element.images[2].url : false} />
-          <br />
-          <a
-            className="artist-link"
-            href={element.id ? "/tracks/" + element.id : undefined}
-          >
-            {" "}
-            ALBUM{" "}
-          </a>
-        </div>
-      ))}
+      <div className="results-container">
+        {props.items.map((element) => (
+          <div class="artist-result">
+            <img
+              src={
+                element.images[1]
+                  ? element.images[1].url
+                  : "/images/noalbum.gif"
+              }
+              width={element.images[1] ? element.images[1].width : "320"}
+              height={element.images[1] ? element.images[1].height : "320"}
+            />
+            <h3>{element.name}</h3>
+            <a
+              class="artist-link"
+              href={element.id ? "/tracks/" + element.id : undefined}
+            >
+              {" "}
+              View tracks{" "}
+            </a>
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }

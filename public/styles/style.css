@@ -176,6 +176,7 @@ h3 {
   align-content: center;
   align-items: center;
   margin: 20px;
+  text-align: center;
 }
 
 .results-container {
@@ -191,4 +192,26 @@ h3 {
   text-transform: uppercase;
   border-radius: 10%;
   font-size: 0.8rem;
+}
+
+thead {
+  background-color: #393939;
+}
+
+.td-head {
+  height: 50px;
+  padding: 10px;
+  color: white;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.td-body {
+  height: 50px;
+  padding: 10px;
+  color: #393939;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 500;
 }
