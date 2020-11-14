@@ -8,12 +8,13 @@ function Albums(props) {
                 <div id="albums">
                     {props.data.map((prop, i) => {
                         return (
-                            <div key={i}>
+                            <div class="individual-artist" key={i}>
 
-                                <h2>{prop.name}</h2>
                                 {prop.images.length === 0 ? null :
                                     <img src={`${prop.images[1].url}`} />}
-                                <a href={`/albums/${prop.id}/tracks`}>View Tracks</a>
+                                <h2 class="track-name">{prop.name}</h2>
+
+                                <a class="view-tracks-link" href={`/albums/${prop.id}/tracks`}>View Tracks</a>
 
                             </div>)
 

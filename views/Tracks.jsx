@@ -3,25 +3,26 @@ const Layout = require('./Layout');
 
 
 function Tracks(props) {
-    console.log(props.data[0]);
     return (
         <Layout>
-            <div>
+            <div id="track-page">
+                <div id="track-titles">
+                    <h2>Title</h2>
+                    <h2>Listen</h2>
+                </div>
                 {props.data.map((prop, i) => {
                     return (
-                        <div>
-                            <h2>Title</h2>
-                            <h2>Listen</h2>
-                            {prop.preview_url.length === 0 ? null :
-                                <figure key={i}>
-                                    <figcaption>Listen to the {prop.name}:</figcaption>
+                        <div id="track">
+                            {/* {prop.preview_url.length === 0 ? null : */}
+                            <figure class="track" key={i}>
+                                <figcaption>Listen to the {prop.name}:</figcaption>
 
-                                    <audio
-                                        controls
+                                <audio
+                                    controls
 
-                                        src={`${prop.preview_url}`}>
-                                    </audio>
-                                </figure>}
+                                    src={`${prop.preview_url}`}>
+                                </audio>
+                            </figure>
 
                         </div>
                     )

@@ -8,8 +8,8 @@ function Layout(props) {
 
             <head>
                 <meta charSet="utf-8" />
-                <title> Home </title>
-                <link rel="stylesheet" href="styles/style.css" />
+                <title> Spotify </title>
+                <link rel="stylesheet" href="/styles/style.css" />
             </head>
 
             <body>
