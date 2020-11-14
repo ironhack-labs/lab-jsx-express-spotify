@@ -171,18 +171,16 @@ h3 {
   width: 320px;
   height: 376px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .results-container {
-  padding: 20px;
-  display: inline-flex;
-
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .artist-link {
