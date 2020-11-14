@@ -10,7 +10,7 @@ function Index() {
           <form action="/artist-search" method="get">
             <input type="text" name="artist" />
             <br />
-            <button type="submit">Submit</button>
+            <button type="submit" className="form-button">Submit</button>
           </form>
         </div>
       </div>

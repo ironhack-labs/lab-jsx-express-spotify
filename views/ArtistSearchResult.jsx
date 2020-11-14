@@ -3,7 +3,7 @@ const React = require("react");
 const Layout = require("./Layout");
 
 function ArtistSearchResult(props) {
-  // console.log("Props artist", props.artists.items[0].images[2]);
+  console.log("Props artist", props.artists.items[0].images[2]);
 
   return (
     <Layout>

@@ -21,7 +21,6 @@ function Tracks(props) {
                 <audio
                   id={element.id}
                   controls
-                  autoPlay
                   src={element.preview_url}
                 >
                   Your browser does not support the

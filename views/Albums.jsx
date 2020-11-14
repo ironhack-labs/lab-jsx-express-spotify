@@ -22,8 +22,7 @@ function Albums(props) {
               class="artist-link"
               href={element.id ? "/tracks/" + element.id : undefined}
             >
-              {" "}
-              View tracks{" "}
+              View tracks
             </a>
           </div>
         ))}

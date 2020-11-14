@@ -10,10 +10,6 @@ function Layout(props) {
         <link href="/styles/style.css" rel="stylesheet" />
       </head>
       <body>
-        <nav>
-          <img src="" />
-          <a href="/">Home</a>
-        </nav>
         <main>{props.children}</main>
       </body>
     </html>
