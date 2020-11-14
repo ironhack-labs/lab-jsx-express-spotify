@@ -24,8 +24,7 @@ function ArtistSearchResult(props) {
               class="artist-link"
               href={element.id ? "/albums/" + element.id : undefined}
             >
-              {" "}
-              Album{" "}
+              View albums
             </a>
           </div>
         ))}

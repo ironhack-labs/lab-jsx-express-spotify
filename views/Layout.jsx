@@ -9,7 +9,13 @@ function Layout(props) {
         <title>Document</title>
         <link href="/styles/style.css" rel="stylesheet" />
       </head>
-      <body>{props.children}</body>
+      <body>
+        <nav>
+          <img src="" />
+          <a href="/">Home</a>
+        </nav>
+        <main>{props.children}</main>
+      </body>
     </html>
   );
 }

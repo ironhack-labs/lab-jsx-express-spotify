@@ -130,7 +130,16 @@ table {
 }
 
 /* --- CSS RESET END --- */
-
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
 #home-container {
   background-image: url("/images/spotify-background.jpeg");
   background-repeat: no-repeat;
@@ -192,6 +201,7 @@ h3 {
   text-transform: uppercase;
   border-radius: 10%;
   font-size: 0.8rem;
+  margin: 5px;
 }
 
 thead {
