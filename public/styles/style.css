@@ -188,10 +188,10 @@ h3 {
 .artist-result {
   background-color: #3c3c3c;
   width: 320px;
-  height: 376px;
+  height: 385px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   margin: 20px;
@@ -230,7 +230,6 @@ thead {
 .td-body {
   height: 50px;
   padding: 10px;
-  color: #393939;
   text-align: left;
   vertical-align: middle;
   font-weight: 500;

@@ -13,11 +13,11 @@ function ArtistSearchResult(props) {
             <img
               src={
                 element.images[1]
-                  ? element.images[1].url
+                  ? (element.images[1].width <= 320 ? element.images[1].url : element.images[2].url)
                   : "/images/noalbum.gif"
               }
-              width={element.images[1] ? element.images[1].width : "320"}
-              height={element.images[1] ? element.images[1].height : "320"}
+              width={element.images[1] ? (element.images[1].width <= 320 ? element.images[1].width : element.images[2].width) : "320"}
+              height={element.images[1] ?(element.images[1].height <= 320 ? element.images[1].height : element.images[2].height) : "320"}
             />
             <h3>{element.name}</h3>
             <a
