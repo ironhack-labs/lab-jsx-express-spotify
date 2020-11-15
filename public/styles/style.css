@@ -23,7 +23,8 @@
 }
 
 .search-card h5 {
-  margin: 20px 0;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .search-card a {
@@ -39,6 +40,10 @@
 
 .track-list {
   margin: 20px 0;
+}
+
+.track-list h1 {
+  margin: 20px;
 }
 
 .track {

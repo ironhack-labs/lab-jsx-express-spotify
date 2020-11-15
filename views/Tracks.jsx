@@ -11,15 +11,19 @@ function Tracks(props) {
     <Layout>
       <div>
         <div className="track-list">
+          <h1>{props.albumName}</h1>
+
           {props.data.body.items.map((results, i) => {
             return (
-              <div key={i} className="track">
-                <p className="list-group-item">
-                  {i + 1}. {results.name}{" "}
-                </p>
-                <audio controls src={results.preview_url}>
-                  Play audio
-                </audio>
+              <div>
+                <div key={i} className="track">
+                  <p className="list-group-item">
+                    {i + 1}. {results.name}{" "}
+                  </p>
+                  <audio controls src={results.preview_url}>
+                    Play audio
+                  </audio>
+                </div>
               </div>
             );
           })}

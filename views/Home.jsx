@@ -15,6 +15,7 @@ function Home() {
               placeholder="Look for..."
             />
           </div>
+
           <button className="btn btn-primary" type="submit">
             Search
           </button>
