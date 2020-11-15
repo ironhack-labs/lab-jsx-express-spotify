@@ -11,13 +11,7 @@ function Layout(props) {
       </head>
       <body>
         <nav>
-          <a href="/"> Home </a>
-          <a href="/"> in </a>
-          <a href="/"> case </a>
-          <a href="/"> we'd </a>
-          <a href="/"> need </a>
-          <a href="/"> a </a>
-          <a href="/"> menu </a>
+          <a href="/"> Start over </a>
         </nav>
         {/* This is the only page that will have full html setup */}
 
