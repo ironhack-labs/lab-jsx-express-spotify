@@ -9,7 +9,7 @@ function ArtistSearchResult (props){
             {props.items.map((artist, i) =>{
                 return(
                   <div key = {i} >
-                    <img src={artist.images[1].url} width="200" alt="" />
+                    {artist.images.lenght !==0? null:(<img src={artist.images[1].url} width="200" alt="" />)}
                     <h5>{artist.name}</h5>
                     <a href={`/albums/${artist.id}`}>View Albums</a>   
                   </div>
