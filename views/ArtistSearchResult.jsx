@@ -9,7 +9,8 @@ function ArtistSearchResult(props) {
   
     return (
         <Layout>
-        <h1>Search result:"</h1>
+        <h1>Search result:</h1>
+        <div class="container">
         { 
             props.body.artists.items.map((el, i)=>{
             console.log (el.name);
@@ -17,7 +18,7 @@ function ArtistSearchResult(props) {
                 //console.log("this artist search returns no image[0] for element "+ el)
             }else{
                 return (
-                <div key={i} className="artistResult">
+                <div key={i} class="artist-result">
                 <img src= {el.images[0].url}></img>
                 <h2>{el.name} </h2>
                 <a class="card-button" href={"/albums/"+el.id}>View Albums </a>
@@ -35,6 +36,7 @@ function ArtistSearchResult(props) {
             
         })    
         }
+        </div>
         </Layout>
     )
     

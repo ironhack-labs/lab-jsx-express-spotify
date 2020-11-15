@@ -6,11 +6,12 @@ function Home() {
     return (
         <Layout>
 
-          <h1>Home</h1>
-          <form action="/artist-search" method="GET">
-              <input type="text" name="artist" placeholder="Search for an Artist"/>
-              <input type="submit" value = "Search"/>
-          </form>
+          <div id="home">
+            <form action="/artist-search" method="GET">
+                <input id="form-input" type="text" name="artist" placeholder="Search for an Artist"/>
+                <input id="form-button" type="submit" value = "Search artists"/>
+            </form>
+          </div>
         
         </Layout>
         

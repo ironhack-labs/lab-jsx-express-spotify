@@ -21,8 +21,6 @@ function Tracks(props) {
 
           }
           
-         
-        
         </Layout>
         
       );
