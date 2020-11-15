@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon -e '*' app.js",
+    "x": "nodemon -e '*' app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +13,13 @@
   "devDependencies": {
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "spotify-web-api-node": "^5.0.0"
   }
 }
