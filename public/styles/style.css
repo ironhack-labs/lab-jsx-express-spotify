@@ -5,25 +5,25 @@
 /* DEFAULT STYLES */
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     font-weight: 300;
+    font-size: 16px;
     /* general6 */
-    background-color: #333333;
+    background-color: black;
     color: #ffffff;
 }
 a:link {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
   
 a:visited {
     text-decoration: none;
-    color: #43e8e3;
+    color: #ffffff;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ffa6b7;
+    color: #000000;
     text-decoration: none;
     
 }
@@ -39,17 +39,25 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
 #form-input{
     padding: 1rem 2rem;
     border-radius: 3rem 0 0 3rem;
     border: none;
     width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 #form-button{
     padding: 1rem 2rem;
     border-radius: 0rem 3rem 3rem 0;
     border: none;
     background-color: #e44d3c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 /* -----Artist result-------------------------------- */
@@ -59,15 +67,29 @@ a:hover {
     /* height: 1000px; */
     justify-content: center;
 }
-.artist-result {
+.result {
     width: 400px;
-    height: 480px;
-    margin: 0.5rem;
-    
+    height: 500px;
+    margin: 0.5rem; 
+    font-size: 0.7rem; 
 }
-.artist-result img{
+.result div {
+    background-color: #333333; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.result h2{
+    margin: 2rem;
+}
+
+.result img{
     width: 400px;
-    /* height: 400px; */
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 .card-button{
@@ -75,4 +97,6 @@ a:hover {
     border-radius: 3rem;
     border: none;
     background-color: #e44d3c; 
+    font-weight: 500;
+    margin: 1rem;
 }

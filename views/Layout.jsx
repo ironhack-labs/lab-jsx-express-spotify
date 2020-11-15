@@ -1,5 +1,6 @@
 const React = require('react');
 
+
 function Layout(props) {
   return (
     <html lang="en">
