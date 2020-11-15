@@ -1,10 +1,10 @@
 {
   "name": "jsx-express-spotify",
   "version": "1.0.0",
-  "description": "",
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
   "main": "app.js",
   "scripts": {
-    "start:dev": "nodemon -e '*' app.js",
+    "dev": "nodemon -e '*' app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +13,21 @@
   "devDependencies": {
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "spotify-web-api-node": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmaryal/lab-jsx-express-spotify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emmaryal/lab-jsx-express-spotify/issues"
+  },
+  "homepage": "https://github.com/emmaryal/lab-jsx-express-spotify#readme"
 }
