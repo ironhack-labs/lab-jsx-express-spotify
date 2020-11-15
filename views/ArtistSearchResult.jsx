@@ -1,27 +1,28 @@
 const React = require("react");
+const Layout = require("./Layout");
 
 function ArtistSearchResult(props) {
   return (
-    <div>
-      {props.data.map((searchResObj, i) => {
-        return (
-          <div key={i}>
-            <img
-              src={
-                searchResObj.images.length === 0
-                  ? null
-                  : searchResObj.images[0].url
-              }
-              alt=""
-              height="500px"
-              width="300px"
-            />
-            <h2>{searchResObj.name}</h2>
-            <a href={`/albums/${searchResObj.id}`}>View Albums</a>
-          </div>
-        );
-      })}
-    </div>
+    <Layout>
+      <div class="result-container">
+        {props.data.map((searchResObj, i) => {
+          return (
+            <div class="result-card" key={i}>
+              <img
+                class="cover-picture"
+                src={
+                  searchResObj.images.length === 0
+                    ? null
+                    : searchResObj.images[0].url
+                }
+              />
+              <h2>{searchResObj.name}</h2>
+              <a href={`/albums/${searchResObj.id}`}>View Albums</a>
+            </div>
+          );
+        })}
+      </div>
+    </Layout>
   );
 }
 
