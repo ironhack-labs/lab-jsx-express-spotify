@@ -16,6 +16,7 @@
 
 .search-card {
   width: 18rem;
+  height: 29rem;
   margin: 20px 20px;
   display: flex;
   flex-direction: column;
@@ -25,10 +26,12 @@
 .search-card h5 {
   margin: 20px auto;
   text-align: center;
+  height: 3rem;
 }
 
 .search-card a {
   margin: 10px 0;
+  width: 10rem;
 }
 
 .search-grid-center {
@@ -43,7 +46,10 @@
 }
 
 .track-list h1 {
-  margin: 20px;
+  margin: 20px 50px;
+}
+.album-title {
+  width: 1000px;
 }
 
 .track {

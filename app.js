@@ -81,13 +81,16 @@ app.get("/albums/:artistId", (req, res, next) => {
     });
 });
 
-app.get("/tracks/:albumId/album/:albumName", (req, res, next) => {
+app.get("/tracks/:albumId/album/:albumName/", (req, res, next) => {
   //console.log("artistId:", req.params.artistId);
   spotifyApi
     .getAlbumTracks(req.params.albumId)
     .then((data) => {
-      console.log("Albums tracks", data.body.items[0]);
-      const dataObj = { data: data, albumName: req.params.albumName };
+      console.log("Albums tracks", data.body.items[0].artists[0].external_urls);
+      const dataObj = {
+        data: data,
+        albumName: req.params.albumName,
+      };
 
       res.render("Tracks", dataObj);
     })
