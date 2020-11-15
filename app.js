@@ -41,7 +41,7 @@ spotifyApi
 
 // ITERATION 1
 
-app.get('/home', (req, res, next) => {
+app.get('/', (req, res, next) => {
   res.render('Home');
 })
 
