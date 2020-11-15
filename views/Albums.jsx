@@ -1,18 +1,14 @@
 const React = require('react');
+const Layout = require('./layout');
 
 function AlbumSearchResult(props){
     
 return (
-    <html>
-        <head> <link href="/stylesheets/style.css" rel="stylesheet" /></head>
+    <Layout>
     <div>
-       {console.log("props in the album page: ", props.items)}
-       
         {props.items.map((alb, i)=>{
             return (
-            
                 <div key = {i}> 
-                
                 <h2>{alb.name}</h2>
                     
                     <img className = "albImg" src={alb.images[0]
@@ -32,14 +28,7 @@ return (
         }
 
     </div>
-    </html> 
-                  
-                  
-                  
-                  )
-        }
-        
-     
- 
-
+    </Layout>
+ )
+ }
 module.exports = AlbumSearchResult;

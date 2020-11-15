@@ -1,18 +1,13 @@
 const React = require('react');
-
+const Layout = require('./layout');
 function ArtistSearchResult(props){
     
 return (
-    <html>
-        <head>        <link href="/stylesheets/style.css" rel="stylesheet" /></head>
+    <Layout>
     <div>
-       {console.log("props in the search result form: ", props.artists.items)}
-       
         {props.artists.items.map((artist, i)=>{
             return (
-            
                 <div key = {i}> 
-                
                 <h2>{artist.name}</h2>
                     <img className = "albImg" src={artist.images[0]
                     ? artist.images[0].url
@@ -27,18 +22,12 @@ return (
                     </a></h3>
                 </div>
                )
-            }  )         
+            }  
+        )         
         }
-
     </div>
-    </html> 
-                  
-                  
-                  
-                  )
+    </Layout>
+        ) 
         }
-        
-     
- 
-
+    
 module.exports = ArtistSearchResult;
