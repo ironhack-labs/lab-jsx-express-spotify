@@ -3,31 +3,31 @@ const Layout = require("./Layout");
 
 function Albums(props) {
   //console.log("showing props at Albums:"+props.body.items[0].name)
+  
+  
+  
+  
   return (
     <Layout>
-    <h1>Albums Search Result</h1>
-    <div className="container">
-    {
-      props.body.items.map((el, i)=>{
+      <h1>Albums Search Result</h1>
+      <div className="container">
+      {
+        props.body.items.map((el, i)=>{
         if (!el.images[0]) {
-          {/* return (
-          <div className="albumsResult" key={i}>
-            <h2>No picture 0 for album {el.name}</h2>
-          </div>
-          ) */}
+            //No picture 0 for album {el.name}
         } else {
-        return (
-        <div className="result" key={i}>
-          <img src={el.images[0].url}></img>
-          <div>
-            <h2>{el.name}</h2>
-            <a className="card-button" href={"/tracks/"+el.id}>View tracks</a>
+          return (
+          <div className="result" key={i}>
+            <img src={el.images[0].url}></img>
+            <div>
+              <h2>{el.name}</h2>
+              <a className="card-button" href={"/tracks/"+el.id}>View tracks</a>
+            </div>
           </div>
-        </div>
-        )
+          )
         } 
-      })
-    }
+        })
+      }
     </div>
     </Layout>
   )

@@ -11,9 +11,10 @@ function Tracks(props) {
             //console.log("props body items 0:"+props.body.items[0].name)
             props.body.items.map((el, i)=>{
                 return(
+                    
                     <div key={i} class="track">
                         <span>{el.name}</span>
-                        <a href="/">Play</a>
+                        <a className="card-button" href="/">Play</a>
                     </div>
                 )
 

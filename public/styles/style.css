@@ -60,7 +60,7 @@ form {
     font-weight: 500;
 }
 
-/* -----Artist result-------------------------------- */
+/* -----Artist & Album result-------------------------------- */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +72,14 @@ form {
     height: 500px;
     margin: 0.5rem; 
     font-size: 0.7rem; 
+    line-height: 1rem;
+}
+.result img{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .result div {
     background-color: #333333; 
@@ -79,24 +87,37 @@ form {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    margin-top: 0;
 }
 .result h2{
-    margin: 2rem;
+    margin-left: 2rem;
+    width: 200px;
 }
 
-.result img{
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
 .card-button{
     padding: 1rem 2rem;
     border-radius: 3rem;
     border: none;
     background-color: #e44d3c; 
     font-weight: 500;
-    margin: 1rem;
+    margin-right: 1rem;
+
+}
+
+/* ---------------------------- */
+.track {
+    background-color: #333333; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 0;
+    font-size: 0.7rem; 
+    line-height: 1rem;
+    margin-bottom: 1px;
+
+}
+.track span{
+    margin-left: 2rem;
+    width: 600px;
 }
